@@ -1,0 +1,129 @@
+$btn-width: 80px;
+$break: 1000px;
+$main: 85%;
+$side: 15%;
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+}
+
+#content-main {
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+}
+
+#content-related {
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+}
+
+.colMS {
+    margin-right: 0 !important;
+}
+
+.colM {
+    .aligned {
+        .vLargeTextField {
+            width: 100%;
+        }
+    }
+}
+
+.button, 
+input[type=submit], 
+input[type=button], 
+.submit-row input {
+    min-width: $btn-width;
+    min-height: 24px;
+}
+
+.login {
+    #container {
+        max-width: 320px;
+        margin-top: 0;
+    }
+
+    .submit-row {
+        padding: 0;
+        position: relative;
+        input {
+            position: absolute;
+            left: 50%;
+            margin-left: 0 - $btn-width/2;
+        }
+    }
+}
+
+.dashboard {
+    #content {
+        width: 100%;
+    }
+    @media (min-width: $break) {
+        #content-main {
+            width: $main;
+        }
+
+        #content-related {
+            width: $side;
+        }
+    }
+}
+
+.change-list {
+    #toolbar {
+        margin-right: 0 !important;
+    }
+
+    #changelist {
+        min-height: 0;
+        background: white !important;
+    }
+
+    #changelist-filter {
+        width: 100%;
+        position: static;
+    }
+
+    #changelist-form {
+        width: 100%;
+        .actions {
+            margin-right: 0 !important;
+        }
+        .results {
+            margin-right: 0 !important;
+        }
+        .paginator {
+            margin-right: 0 !important;
+        }
+    }
+
+    @media (min-width: $break) {
+        #changelist-filter {
+            width: $side;
+            float: right;
+        }
+
+        #changelist-form {
+            width: $main;
+            float: left;
+        }
+    }
+}
+

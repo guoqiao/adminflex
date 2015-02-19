@@ -1,0 +1,78 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#container {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0; }
+
+#content {
+  width: 100%;
+  margin: 0;
+  padding: 5px; }
+
+#content-main {
+  width: 100%;
+  margin: 0;
+  padding: 5px; }
+
+#content-related {
+  width: 100%;
+  margin: 0;
+  padding: 5px; }
+
+.colMS {
+  margin-right: 0 !important; }
+
+.colM .aligned .vLargeTextField {
+  width: 100%; }
+
+.button, input[type=submit], input[type=button], .submit-row input {
+  min-width: 80px;
+  min-height: 24px; }
+
+.login #container {
+  max-width: 320px;
+  margin-top: 0; }
+.login .submit-row {
+  padding: 0;
+  position: relative; }
+  .login .submit-row input {
+    position: absolute;
+    left: 50%;
+    margin-left: -40px; }
+
+.dashboard #content {
+  width: 100%; }
+@media (min-width: 1000px) {
+  .dashboard #content-main {
+    width: 85%; }
+  .dashboard #content-related {
+    width: 15%; } }
+
+.change-list #toolbar {
+  margin-right: 0 !important; }
+.change-list #changelist {
+  min-height: 0;
+  background: white !important; }
+.change-list #changelist-filter {
+  width: 100%;
+  position: static; }
+.change-list #changelist-form {
+  width: 100%; }
+  .change-list #changelist-form .actions {
+    margin-right: 0 !important; }
+  .change-list #changelist-form .results {
+    margin-right: 0 !important; }
+  .change-list #changelist-form .paginator {
+    margin-right: 0 !important; }
+@media (min-width: 1000px) {
+  .change-list #changelist-filter {
+    width: 15%;
+    float: right; }
+  .change-list #changelist-form {
+    width: 85%;
+    float: left; } }
