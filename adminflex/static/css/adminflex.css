@@ -388,6 +388,8 @@ textarea {
       width: 100%; }
     .selector .selector-available {
       width: 100%; }
+      .selector .selector-available input {
+        width: 100%; }
     .selector ul.selector-chooser {
       margin-top: 0;
       width: 100%; }

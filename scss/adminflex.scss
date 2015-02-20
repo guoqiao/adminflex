@@ -98,6 +98,9 @@ input[type=button],
         }
         .selector-available {
             width: 100%;
+            input {
+                width: 100%;
+            }
         }
         ul.selector-chooser {
             margin-top: 0;
