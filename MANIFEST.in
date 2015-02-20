@@ -1,4 +1,4 @@
 include README.md 
 include LICENSE
-recursive-include nzpower/static *
-recursive-include nzpower/templates *
+recursive-include adminflex/static *
+recursive-include adminflex/templates *
