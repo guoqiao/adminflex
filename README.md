@@ -18,12 +18,10 @@ Quick start
 
 2. Add "adminflex" to INSTALLED_APPS before django admin:
 
-    INSTALLED_APPS = (
-        'adminflex',
-        'django.contrib.admin',
-        ...
-    )
-
-3. Done.
-
-
+```
+	INSTALLED_APPS = (
+	    'adminflex',
+	    'django.contrib.admin',
+	    ...
+	)
+```
